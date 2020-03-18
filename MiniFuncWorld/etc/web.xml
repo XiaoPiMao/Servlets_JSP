@@ -14,4 +14,24 @@
 		<servlet-name>Jar Download</servlet-name>
 		<url-pattern>/jarDownload</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Test Init Params</servlet-name>
+		<servlet-class>com.felis.func.InitParamsTestServlet</servlet-class>
+		<init-param>
+			<param-name>mainEmail</param-name>
+			<param-value>OOO@cmail.com</param-value>
+		</init-param>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Test Init Params</servlet-name>
+		<url-pattern>/Tester.do</url-pattern>
+	</servlet-mapping>
+	
+	<context-param>
+		<param-name>adminEmail</param-name>
+		<param-value>xxx@cmail.com</param-value>
+	</context-param>
+
 </web-app>
