@@ -29,9 +29,28 @@
 		<url-pattern>/Tester.do</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>Test Servlet Context Listener</servlet-name>
+		<servlet-class>com.felis.tscl.ListenerTester</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Test Servlet Context Listener</servlet-name>
+		<url-pattern>/ListenTest.do</url-pattern>
+	</servlet-mapping>
+	
 	<context-param>
 		<param-name>adminEmail</param-name>
 		<param-value>xxx@cmail.com</param-value>
 	</context-param>
+	
+	<context-param>
+		<param-name>breed</param-name>
+		<param-value>Great Dane</param-value>
+	</context-param>
+	
+	<listener>
+		<listener-class>com.felis.tscl.MyServletContextListener</listener-class>
+	</listener>
 
 </web-app>
